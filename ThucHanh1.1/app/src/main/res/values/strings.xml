@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ThucHanh1.1</string>
+    <string name="us_Dola">US Dollars</string>
+    <string name="vnd">VNDs</string>
+    <string name="clear">CLEAR</string>
+    <string name="convert">CONVERT</string>
+</resources>
