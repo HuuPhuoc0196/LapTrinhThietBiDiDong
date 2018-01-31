@@ -113,4 +113,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCong" />
 
+    <Button
+        android:id="@+id/buttonManHinh"
+        android:layout_width="129dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="28dp"
+        android:text="Backgroud Image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKetQua" />
+
 </android.support.constraint.ConstraintLayout>

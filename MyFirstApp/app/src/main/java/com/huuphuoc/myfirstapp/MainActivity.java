@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edtSo1, edtSo2;
     TextView txtvKetQua;
-    Button btnCong, btnTru, btnNhan, btnChia, btnRandom;
+    Button btnCong, btnTru, btnNhan, btnChia, btnRandom, btnManHinh;
     ConstraintLayout manHinh;
 
     public void TinhToan(Button btn) {
@@ -83,9 +83,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        manHinh = (ConstraintLayout) findViewById(R.id.ManHinh);
-        manHinh.setBackgroundResource(R.drawable.image);
-
         Toasts("Chào mừng bạn đến với MyFirstApp");
 
         edtSo1 = (EditText) findViewById(R.id.editTextSo1);
@@ -96,6 +93,17 @@ public class MainActivity extends AppCompatActivity {
         btnTru = (Button) findViewById(R.id.buttonTru);
         btnNhan = (Button) findViewById(R.id.buttonNhan);
         btnChia = (Button) findViewById(R.id.buttonChia);
+        btnManHinh = (Button) findViewById(R.id.buttonManHinh);
+
+        btnManHinh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // load màn hình backgroud
+                manHinh = (ConstraintLayout) findViewById(R.id.ManHinh);
+                manHinh.setBackgroundResource(R.drawable.image);
+                btnManHinh.setEnabled(false);
+            }
+        });
 
         btnRandom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,14 +129,12 @@ public class MainActivity extends AppCompatActivity {
                TinhToan(btnCong);
             }
         });
-
         btnNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TinhToan(btnNhan);
             }
         });
-
         btnChia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
