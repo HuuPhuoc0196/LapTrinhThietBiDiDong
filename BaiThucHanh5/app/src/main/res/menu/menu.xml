@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/zoom_in"
+        android:title= "@string/zoom_in"
+        android:icon="@drawable/ic_zoom_in"
+        app:showAsAction="always|withText"/>
+
+
+    <item
+        android:id="@+id/zoom_uot"
+        android:title="@string/zoom_uot"
+        android:icon="@drawable/ic_zoom_uot"
+        app:showAsAction="always|withText"/>
+
+</menu>
